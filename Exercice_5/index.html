@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="testCtrl">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercice 5</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <nav>
+            <h3>Liens des exercices</h3>
+            <ul>
+                <li><a href="../Exercice_1/index.html">Exercice 1</a></li>            
+                <li><a href="../Exercice_2/index.html">Exercice 2</a></li>
+                <li><a href="../Exercice_3/index.html">Exercice 3</a></li>
+                <li><a href="../Exercice_4/index.html">Exercice 4</a></li>
+                <li><a href="../Exercice_6/index.html">Exercice 6</a></li>
+                <li><a href="../Exercice_7/index.html">Exercice 7</a></li>
+            </ul>
+        </nav>
+        <div>
+            <!-- J'ai filtré article pour qu'il n'affiche que les 150 premiers caractères -->
+            <p>{{article| limitTo:150}}</p>
+        </div>
+    </body>
+</html>

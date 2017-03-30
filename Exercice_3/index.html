@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="testCtrl">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercice 3</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    </head>
+    <body>
+        <nav>
+            <h3>Liens des exercices</h3>
+            <ul>
+                <li><a href="../Exercice_1/index.html">Exercice 1</a></li>            
+                <li><a href="../Exercice_2/index.html">Exercice 2</a></li>
+                <li><a href="../Exercice_4/index.html">Exercice 4</a></li>
+                <li><a href="../Exercice_5/index.html">Exercice 5</a></li>
+                <li><a href="../Exercice_6/index.html">Exercice 6</a></li>
+                <li><a href="../Exercice_7/index.html">Exercice 7</a></li>
+            </ul>
+        </nav>
+        <div>
+            <!-- J'ai filtré la date en format Français -->
+            <p>Date: {{'2017-01-23'| date : 'dd/MM/yyyy'}}</p>
+        </div>
+        <script>
+                    //Déclaration de mon ng-app et de mon contrôleur
+                    var testApp = angular.module('app', []);
+                    testApp.controller('testCtrl', function ($scope) {
+                    });
+        </script>
+    </body>
+</html>
